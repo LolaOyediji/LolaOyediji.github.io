@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="author" content="Mirjana & Lola">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/signupbutton.js" ></script> 
+    <title>365 Workout | Personal Training Sessions </title> 
+  </head>
+
+  <body>
+    <header>
+      <!--NAVBAR-->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="nav">
+        <a class="navbar-brand" href="index.html">
+          <img src="../images/fabicon.jpeg" width="60" height="30" alt="logo" id="favicon">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workout.html">Workouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="healthyeating.html">Recipes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="signup.html">Personal Training</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main>
+      <!--HEADING & DESCRIPTION-->
+      <article class="intro">
+        <h1 id="title">Personal Training Guides</h1>
+        <p class="description">Want a workout that's tailored to your goals? 365 Workout also provide online personal training guides! For more information, please sign up!</p>
+      </article>
+
+      <!--INPUT FIELDS: NAME, EMAIL, AGE, GENDER, etc-->
+      <div class="main topbottom addmargins">
+        <form> 
+          <label for="name">Name:<br/>
+          <input id="name" type="text" placeholder="Enter your name" required></label> <br/><br/>
+
+          <label for="email">Email:<br/>
+          <input id="email" type="email" placeholder="Enter your email" required></label> <br/><br/>
+
+          <label for="number">Age:<br/>
+          <input type="number" id="number" min="16" max="100" step="1"></label> <br/><br/>
+
+          <label for="gender">Gender:<br/>
+          <input id="male" type="radio" name="gender" value="Male" required>Male
+          <input id="female" type="radio" value="female" name="gender" required>Female</label> <br/><br/>
+
+          <fieldset>
+            <legend>How often do you go to the gym in a week?</legend>
+            <label for="never"><input id="never" type="radio" name="never-once-thrice-more" value="Never">I don't..</label> <br/>
+            <label for="once"><input id="once" type="radio" name="never-once-thrice-more" value="Once">Mmm, once or twice</label> <br/>
+            <label for="thrice"><input id="thrice" type="radio" name="never-once-thrice-more" value="Thrice">3 - 4 times</label> <br/>
+            <label for="more"><input id="more" type="radio" name="never-once-thrice-more" value="More">More than 4 times, it's my second home!</label>
+          </fieldset> <br/>
+
+          <fieldset>
+            <legend>Do you have any injuries/medical conditions?</legend>
+            <label for="No"> <input id="No" type="radio" name="yes-no" value="No" required>No</label> <br/>
+            <label for="Yes"> <input id="Yes" type="radio" name="yes-no" value="Yes" required>Yes</label> <br/>
+            <label for="conditions" id="conditions-label"><textarea name="conditions" rows="6" cols="50" maxlength="250" placeholder="If yes, please specify"></textarea>
+          </fieldset> <br/>
+          
+          <fieldset>
+            <legend>When would you prefer to have your personal training sessions? (Tick all that apply)</legend>
+            <label for="Morning"><input id="Mornings" type="checkbox" name="schedule" value="Mornings" checked>Morning</label>
+            <label for="Afternoon"><input id="Afternoons" type="checkbox" name="schedule" value="Afternoons">Afternoon</label>
+            <label for="Evening"><input id="Evening" type="checkbox" value="Evening">Evening</label>
+            <label for="Weekends"><input id="Weekends" type="checkbox" name="schedule" value="Weekends">Weekends</label>
+          </fieldset> <br/>
+
+          <fieldset>
+            <legend>Please summarise what you hope to gain from personal training with 365 Workout:</legend>
+            <textarea name="goals" rows="6" cols="50" maxlength="250" required></textarea>
+        </fieldset> <br/>
+        
+        <!--CONFIRMATION POP-UP WHEN 'SIGN ME UP' BUTTON IS CLICKED-->
+        <button onclick="signUp()" class="btn btn-light">Sign Me Up!</button>
+        <div id="snackbar">Thank you for signing up! An email has been sent to you with more details on our online personal training guides.</div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="inner-footer">
+          <h5>Whatever you do, do it with &hearts;!</h5>
+          
+          <div class="footer-items"> 
+            <!--SOCIAL MEDIA ICONS-->
+              <div class="social-media">
+               <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+               <a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+               <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+          </div>
+        </div>
+              <div class="footer-bottom">
+                Copyright &copy; 365 Workout 2020. All rights reserved.
+              </div>
+      
+      </div>   
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+
+</html>
