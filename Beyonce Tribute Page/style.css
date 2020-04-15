@@ -1,0 +1,86 @@
+body {
+  align-content: center;
+  background-color: beige;
+}
+
+#main {
+  background-color: #C0C0C0;
+
+}
+
+#title{
+  text-align: center;
+  font-size: 80px;
+  color: hsl(60, 56%, 90%);
+  border-bottom: solid;
+}
+
+#slogan {
+  position: relative;
+  bottom: 50px;
+  color: hsl(54, 60%, 91%);
+  font-size: 18;
+}
+
+header {
+  text-align: center;
+}
+
+
+#img-div {
+text-align: center;
+}
+
+#image {
+max-width: 100%;
+display: block;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+border-radius: 15px;
+border-style: double;
+border-color: #eeeed3;
+border-spacing: 300px;
+}
+
+#img-caption {
+  font-family: papyrus;
+  color: hsl(60, 56%, 91%);
+}
+
+.header2 {
+  color: hsl(54, 6%, 55%);
+  font-family: tahoma;
+}
+
+#tribute-info {
+  text-align: justify;
+}
+
+li {
+  font-family: trebuchet ms;
+  color: hsl(64, 3%, 17%);
+}
+
+.motto {
+  text-align: center;
+  color: hsl(54, 60%, 91%);
+  font-size: 20;
+}
+
+.info {
+  color: hsl(60, 56%, 90%);
+  font-family: tahoma;
+  text-align: center;
+  font-size: 22;
+  border-top: solid;
+  border-color: hsl(60, 56%, 90%);
+}
+
+a {
+  color: hsl(50, 56%, 90%);
+}
+
+a:hover {
+  color: hsl(54, 6%, 55%);
+}
