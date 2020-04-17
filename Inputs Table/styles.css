@@ -1,0 +1,41 @@
+#title {
+  text-align: center;
+  font-family: georgia;
+  color: pink; 
+  font-weight: italic;
+}
+
+thead {
+  background-color: pink;
+  color: white;
+}
+
+td {
+  text-align: left;
+}
+
+body {
+font-family: arial;
+background-color: rgb(253, 242, 226);
+}
+
+.tag {
+background-color: pink;
+color: antiquewhite;
+text-align: center;
+font-family: monospace;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px double pink;
+}
+
+tr:hover {
+  background-color: rgb(243, 187, 213);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(250, 233, 213);
+}
