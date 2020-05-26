@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SABRINA BAKARE </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://kit.fontawesome.com/8d289f2486.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="page__heading page__heading--all">
+                <a href="index.html">
+                    <p>SABRINA BAKARE</p>
+                </a>
+            </div>
+
+            <!----------NAVBAR--------->
+            <div class="nav-btn">
+                <div class="nav-btn__burger"></div> 
+            </div>
+
+            <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="about-me.html">About Me</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="track-field.html">Track & Field</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="lupus.html">Lupus</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="mind-mindfully.html">Mind Mindfully</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="zone-discomfort.html">Zone of Discomfort</a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a class="navbar__link--active" href="contact.html">Contact Me</a>
+                    </li>
+                 </ul>
+            </nav>
+
+
+        </header>
+
+        <main class="contact">
+            <section class="page__title--section">
+                <h1 class="page__title page__title--contact">Contact Me!</h1>
+            </section>
+
+            <section class="contact__form--section">
+                <p class="page__text page__text--contact">Please feel free to get in touch!</p>
+                
+                <form class="contact__form" action="#" method="GET">
+                    <div>
+                        <label for="contact-name" class="contact__form--label">Name:</label>
+                        <input type="text" class="contact__form--field" name="name" id="contact-name" required> 
+                    </div>
+
+                    <div>
+                        <label for="contact-email" class="contact__form--label">Email:</label>
+                        <input type="email" class="contact__form--field" name="email" id="contact-email" required>
+                    </div>
+
+                    <div>
+                        <label for="contact-message" class="contact__form--label">Message:</label>
+                        <textarea id="contact-message" name="message" rows="4" cols="33" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="submit__btn"><img class="submit__img" src="images/send-mail.png"></button>
+                    </div>
+                    <div>
+                        <button type="submit" class="smiley__btn"><img class="smiley__img" src="images/emoji.png"></button>
+                    </div>
+                </form>
+                <div class="snackbar">
+                    <p class="snackbar--text">I look forward to connecting with you!</p>
+                </div>
+            </section>
+        </main>
+
+        <!------FOOTER------>
+        <footer class="footer intro__footer" >
+            <div>
+                <ul class="social-list intro__social-list">
+                    <li class="social-list__item intro__social-list-item">
+                        <a class="social-list__link intro__social-list-link" href="https://en-gb.facebook.com/sabrina.bakare" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                
+                    <li class="social-list__item intro__social-list-item">
+                        <a class="social-list__link intro__social-list-link" href="https://www.instagram.com/sabrinabakare/?hl=en" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li class="social-list__item intro__social-list-item">
+                        <a class="social-list__link intro__social-list-link" href="https://twitter.com/sabrinabakare" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lkinss">
+                <div>
+                    <img class="lkinss-img" src="images/LKINSS Logo.png">
+                </div>
+                <div class="copyright">
+                    <a href="https://www.instagram.com/lkinss_/" target="_blank">
+                        <p>&copy; Designed By <strong>L K I N S S { }</strong></p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="navbtn.js"></script>
+        <script src="submitBtn.js"></script>
+        <script src="removeFocus.js"></script>
+    </body>
+</html>
